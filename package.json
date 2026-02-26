@@ -1,4 +1,4 @@
-{
+{ "homepage": "https://github.com/KartikeyTech123/my-profile-.git",
   "name": "my-profile-.git",
   "version": "0.1.0",
   "private": true,
@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
-    "lint": "eslint"
+    "deploy": "next build && gh-pages -d out --no-history --dotfiles",
+    "lint": "eslint",
+    "export": "next export"
   },
   "dependencies": {
     "lucide-react": "^0.575.0",
